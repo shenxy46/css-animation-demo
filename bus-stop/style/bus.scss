@@ -1,0 +1,81 @@
+body,div,dl,dd,dt,ul,li,span,a,table,td,th{
+	margin: 0;
+	padding: 0;
+}
+$primaryColor: #fff;
+body {
+    min-width: 1000px;
+    color: $primaryColor;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+.bus-content {
+    margin-left:25px;
+    width: 95%;
+    height: 520px;
+    background: #27ae61;
+    display:inline-block;
+    .bus-title {
+        width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #1da156;
+        span {
+            font-size: 25px;
+    margin-left: 20px;
+    line-height: 50px;
+        }
+    }
+    .bus-text {
+        border-top: #2cb768 solid 1px;
+        padding: 16px 12px;
+        li {
+            width: 40px;
+            float: left;
+            height:220px;
+            a {
+                display: block;
+                padding-top: 10px;
+                background: url(../images/bus_line.gif) -29px -223px no-repeat;
+                color: $primaryColor;
+                text-decoration: none;
+                &:hover {
+                    background: url(../images/bus_line.gif) -130px -1px no-repeat;
+                    width: 40px;
+                    height: 44px;
+                    .text {
+                        background: url(../images/bus_line.gif) -130px -187px no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.number {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    width: 24px;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 8px;
+    line-height: 20px;
+    padding-bottom: 18px;
+    height: 150px;
+}
+.second{
+	margin-top:10px;
+}
